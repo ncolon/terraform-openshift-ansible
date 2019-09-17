@@ -1,3 +1,3 @@
 ---
   - name: Configure Cluster Admin
-    shell: oc adm policy add-cluster-role-to-user cluster-admin {{ cluster_admin }}
+    shell: oc adm policy add-cluster-role-to-user cluster-admin {{ user }}
