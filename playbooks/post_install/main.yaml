@@ -1,5 +1,5 @@
 ---
-- hosts: master[0]
+- hosts: masters[0]
   tasks:
   - name: Configure {{ openshif_admin_username }} as cluster-admin
     include: tasks/enable_rhnrepos.yaml
