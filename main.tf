@@ -307,7 +307,7 @@ EOF
 
 resource "null_resource" "copy_ansible_playbooks" {
   triggers = {
-    cert = "${timestamp()}"
+    timestamp = "${timestamp()}"
   }
 
   connection {
@@ -323,5 +323,4 @@ resource "null_resource" "copy_ansible_playbooks" {
     source = "${path.module}/playbooks"
     destination = "~"
   }
-
 }
